@@ -86,7 +86,7 @@ for i in range(20):
         corpus.append(doc)
         print(doc)
     
-with open('//Users/AntoineP/Downloads/data.json', 'w', encoding='utf8') as json_file:
+with open('data.json', 'w', encoding='utf8') as json_file:
     json.dump(corpus, json_file, ensure_ascii=False)    
     
     
