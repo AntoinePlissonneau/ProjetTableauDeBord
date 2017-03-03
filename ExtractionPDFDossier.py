@@ -33,7 +33,7 @@ try:
 except:
     print('PDF existe déjà')
     
-for j in range(700,800):
+for j in range(0,1000):
     lien=Json[j]['LienPDF']
     search = requests.get(suffix + lien, headers=headers)
     while str(search)=='<Response [503]>':
