@@ -7,11 +7,13 @@ import io
 import os
 import re
 import time
-
+import logging 
 ListePDF = os.listdir("PDF/")
 for filename in ListePDF[:1] :
     print(filename)
 fn = open("PDF/"+filename, 'rb')
+logging.propagate = False
+logging.getLogger().setLevel(logging.ERROR)
 parser = PDFParser(fn)
 doc = PDFDocument()
 parser.set_document(doc)
