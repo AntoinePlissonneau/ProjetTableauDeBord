@@ -1,0 +1,88 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <title>MonCompteUPS - CAS - Service Central d'Authentification de l'Universit&eacute; Paul Sabatier de Toulouse</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="-1">
+        <style type="text/css" media="screen">@import 'themes/ups-tlse/cas.css'/**/;</style>
+        <!--[if gte IE 6]><style type="text/css" media="screen">@import 'css/ie_cas.css';</style><![endif]-->
+        <script type="text/javascript" src="js/common_rosters.js"></script>
+        <link rel="icon" href="/cas/favicon.ico" type="image/x-icon" />
+    </head>
+
+    <body id="cas" onload="init();">
+        <div id="page">
+        <div id="bandeau_rubrique">
+            <img alt="bandeau" src="images/charte-ups/bandeau.png" />
+        </div>
+        <div id="titre">
+            MonCompteUPS - Service Central d'Authentification de l'Universit&eacute; Paul Sabatier de Toulouse
+        </div>
+        <div id="centralzone">
+
+<div id="colonne1">
+    <div id="connexion">
+        <form id="fm1" class="fm-v clearfix" action="/cas/login;jsessionid=74E9B73F388D4231E2E6C70501BD774D?service=https://docadis.ups-tlse.fr/casReturn/eJwFwQcKwCAMAMAXZTiK9jniKAGpwdj_906WWpX-1g6yFNZ-sK1amhh-anCmdRybyj5SZyfH6Dhn4vtKwD4E8pEicUzMjrSNH2t8GNo" method="post">
+            <h3>Connexion</h3>
+            <fieldset>
+                <label for="username"><span class="accesskey">I</span>dentifiant:</label>
+                
+                
+                    
+                    <input id="username" name="username" class="required" tabindex="1" accesskey="i" type="text" value="" size="25" autocomplete="false"/>
+                
+                <label for="password"><span class="accesskey">M</span>ot de passe:</label>
+                
+                
+                <input id="password" name="password" class="required" tabindex="2" accesskey="m" type="password" value="" size="25" autocomplete="off"/>
+                    <input id="warn" name="warn" value="true" tabindex="3" accesskey="p" type="checkbox" />
+                <label class="warnmsg" for="warn"><span class="accesskey">P</span>révenez-moi avant de me connecter à d'autres services.</label>
+                <input type="hidden" name="lt" value="_cA08481E3-9F6B-8073-90DE-162ABB611090_k9BEE7DD7-0D23-5E48-84D1-C2319050D5CC" />
+                <input type="hidden" name="_eventId" value="submit" />
+                <input class="ok" name="submit" accesskey="l" value="OK" tabindex="4" type="submit" />
+                <input class="effacer" name="reset" accesskey="c" value="Effacer" tabindex="5" type="reset" />
+                
+            </fieldset>
+        </form>
+    </div><!-- fin #connexion -->
+
+    <div id="logo">
+        <img border="0" width="220" usemap="#map1" src="images/charte-ups/logo_ups_pres.png">
+        <map name="map1">
+            <area target="_blank" href="http://www.univ-toulouse.fr" coords="0,0,50,65" alt="Université de Toulouse" shape="RECT">
+            <area href="http://www.ups-tlse.fr/" coords="50,0,220,65" alt="UPS" shape="RECT">
+        </map>
+    </div>
+</div><!-- Fin colonne1 -->
+
+<div id="colonne2">
+    <div class="paragraphe" id="para1">
+        Cette page permet de vous authentifier afin d'acc&eacute;der &agrave; un ensemble de services prot&eacute;g&eacute;s destin&eacute;s aux &eacute;tudiants, enseignants-chercheurs et personnels de l'UPS.<br/><br/>
+        Si vous n'avez pas encore d'identifiant et de mot de passe, cliquez ici : 
+        <a href="https://appli-gestion.univ-tlse3.fr/moncompteUPS">Obtenir un identifiant et un mot de passe</a><br /><br/>
+        Si vous avez oubli&eacute votre identifiant ou votre mot de passe, ou si vous souhaitez changer de mot de passe, cliquez ici : 
+        <a href="https://appli-gestion.univ-tlse3.fr/moncompteUPS">Identifiant ou mot de passe oubli&eacute</a><br/><br/>
+        En cas de probl&egrave;me, veuillez consulter 
+        <a href="http://www.univ-tlse3.fr/problemes-de-connexion-faq-271681.kjsp">la FAQ</a>
+    </div>
+
+    <div class="paragraphe">
+        <span>Pour des raisons de s&eacute;curit&eacute;, fermez votre navigateur web apr&egrave;s avoir acc&eacute;d&eacute; aux services prot&eacute;g&eacute;s !</span><br/><br/>
+        M&eacute;fiez-vous de tous les programmes et pages web qui vous demandent de vous authentifier. Les pages s&eacute;curis&eacute;es de l'UPS vous demandant votre nom d'utilisateur et votre mot de passe ont des URLs de la forme "https://xxx.ups-tlse.fr". De plus, votre navigateur doit indiquer que vous acc&eacute;dez une page s&eacute;curis&eacute;e.
+    </div>
+</div><!-- Fin colonne2 -->
+
+            </div><!-- fin .centralzone -->
+        </div><!-- fin .page -->
+    </body>
+</html>
+
