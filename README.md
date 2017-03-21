@@ -52,6 +52,12 @@ Outil pas encore assez développé
 ###Mise en relation figure/texte
 #####1/Avec le numéro de la figure
 #####2/Avec une analyse de la similarité lexicale
+* rake
+* KEA
+* Stemming
+* tf-idf
+* Vector
+* Cosine
 
 ###Base de donnée mongoDB
 #####Intro: choix d'une base noSQL
