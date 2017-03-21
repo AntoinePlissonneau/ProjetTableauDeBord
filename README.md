@@ -64,3 +64,11 @@ Outil pas encore assez développé
 #####1/Création de la base et injection des données
 
 ###Tableau de bord
+I/Figure/Référence/Légende
+* affichage
+* précision:Références directes bien retrouvées par le ranking
+* rappel?: Références ajoutées par le ranking
+II/Matrice de relation entre documents (tf-idf)
+* faire ressortir les docs liés
+* graph/network de relation
+

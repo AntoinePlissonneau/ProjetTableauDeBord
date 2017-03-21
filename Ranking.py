@@ -10,6 +10,14 @@ from stemming.porter2 import stem
 import re
 from sklearn.feature_extraction.text import TfidfTransformer
 
+#Cosine
+def cosineVector(vector1, vector2):
+        """ related documents j and q are in the concept space by comparing the vectors :cosine  = ( V1 * V2 ) / ||V1|| x ||V2|| """
+        if (np.linalg.norm(vector1) != 0) and (np.linalg.norm(vector2) != 0):
+            return float(np.dot(vector1,vector2) / (np.linalg.norm(vector1) * np.linalg.norm(vector2)))
+        else:
+            return 0
+        
 class Ranking:
     vectorKeywordIndex = []
     documentVectors = []
@@ -90,13 +98,7 @@ class Ranking:
             self.documentVectors = tfidf.toarray().tolist()
             print("Matrice des vecteurs de chaque paragraphe du document crée")
         
-    #5/Cosine
-    def cosineVector(vector1, vector2):
-            """ related documents j and q are in the concept space by comparing the vectors :cosine  = ( V1 * V2 ) / ||V1|| x ||V2|| """
-            if (np.linalg.norm(vector1) != 0) and (np.linalg.norm(vector2) != 0):
-                return float(np.dot(vector1,vector2) / (np.linalg.norm(vector1) * np.linalg.norm(vector2)))
-            else:
-                return 0
+
         
     #6/Search and score
     def search(self,searchList):
